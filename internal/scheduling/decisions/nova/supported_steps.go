@@ -20,6 +20,7 @@ var supportedSteps = map[string]func() NovaStep{
 	"vmware_avoid_short_term_contended_hosts": func() NovaStep { return &weighers.VMwareAvoidShortTermContendedHostsStep{} },
 	"vmware_hana_binpacking":                  func() NovaStep { return &weighers.VMwareHanaBinpackingStep{} },
 	"vmware_general_purpose_balancing":        func() NovaStep { return &weighers.VMwareGeneralPurposeBalancingStep{} },
+	"vmware_energy_efficiency":                func() NovaStep { return &weighers.VMWareEnergyEfficiencyStep{} },
 	"filter_has_accelerators":                 func() NovaStep { return &filters.FilterHasAcceleratorsStep{} },
 	"filter_correct_az":                       func() NovaStep { return &filters.FilterCorrectAZStep{} },
 	"filter_disabled":                         func() NovaStep { return &filters.FilterDisabledStep{} },
